@@ -1,0 +1,28 @@
+$dark-color: #000000;
+
+$light-color: #ffffff;
+
+$adapt-color: light-dark(white, black);
+
+$rev-adapt-color: light-dark(black, white);
+//Mixins
+
+@mixin flex-center-all{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-col($horizontal, $vertical){
+    display: flex;
+    flex-direction: column;
+    justify-content: $horizontal;
+    align-items: $vertical;
+}
+
+@mixin flex-row($horizontal, $vertical){
+    display: flex;
+    flex-direction: row;
+    justify-content: $horizontal;
+    align-items: $vertical;
+}

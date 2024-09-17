@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap");
+:root {
+  color-scheme: light dark;
+}
+
+* {
+  font-family: "Orbitron", sans-serif;
+  color: inherit;
+  margin: 0;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Orbitron", sans-serif;
+  background-color: light-dark(white, black);
+  color: light-dark(black, white);
+  font-weight: 400;
+  font-style: normal;
+}
+
+a {
+  display: inline-block;
+  width: inherit;
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+  line-height: 0;
+}
+
+img {
+  width: inherit;
+  height: auto;
+}
+
+input {
+  border: 0;
+  outline: 0;
+}
+
+button {
+  border: 0;
+}
+
+svg {
+  width: inherit;
+  filter: invert(1);
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+.default-container {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.default-container .tic-tac-toe-title {
+  position: absolute;
+  top: 5%;
+  font-size: 1.2rem;
+}
+.default-container .main-container {
+  width: 600px;
+  height: calc(100% - 2rem);
+  margin: 1rem;
+  border: 5px solid light-dark(black, white);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.default-container .main-container .fixed-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 80px;
+  box-sizing: border-box;
+}
+
+.list-container {
+  width: 100%;
+  height: auto;
+  padding: 0 1rem;
+}
+.list-container form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  gap: 50px;
+}
+.list-container form div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 10px;
+}
+.list-container form div label {
+  font-size: 2rem;
+}
+.list-container form div input {
+  box-sizing: border-box;
+  width: 100%;
+  height: 50px;
+  font-size: 20px;
+  padding: 0.2rem 1rem;
+  border: 1px solid light-dark(black, white);
+  border-radius: 8px;
+}
+
+.score-container {
+  width: 100%;
+}
+.score-container ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.score-container ul li:not(:nth-child(2)) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.tic-tac-toe-container {
+  box-sizing: border-box;
+  width: 250px;
+  height: 250px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 6px;
+  background-color: light-dark(black, white);
+  margin: 0 1rem;
+  outline: 0;
+  border: 0;
+}
+.tic-tac-toe-container .item {
+  cursor: pointer;
+  width: 100%;
+  height: auto;
+  background-color: light-dark(white, black);
+  padding: 8px;
+  border: 0;
+  outline: 0;
+}
+
+.start-btn {
+  cursor: pointer;
+  width: 200px;
+  height: 60px;
+  border-radius: 24px;
+  font-size: 20px;
+  color: light-dark(black, white);
+  background-color: light-dark(white, black);
+  border: 1px solid light-dark(black, white);
+  align-self: center;
+}
+
+.start-btn:hover {
+  background-color: light-dark(rgb(200, 200, 200), rgb(109, 109, 109));
+}
+
+@media screen and (min-width: 500px) {
+  .w-80 {
+    width: 80% !important;
+    height: auto;
+  }
+  .p-0 {
+    padding: 0px !important;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

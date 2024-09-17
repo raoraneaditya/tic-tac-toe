@@ -1,0 +1,29 @@
+
+.list-container{
+    width: 100%;
+    height: auto;
+    padding: 0 1rem;
+    form{
+        @include flex-col(space-between, start);
+        gap: 50px;
+        div{
+            width: 100%;
+            @include flex-col(start, start);
+            gap: 10px;
+            label{
+                font-size: 2rem;
+            }
+            input{
+                box-sizing: border-box;
+                width: 100%;
+                height: 50px;
+                font-size: 20px;
+                padding: 0.2rem 1rem;
+                border: 1px solid $rev-adapt-color;
+                border-radius: 8px;
+            }
+          
+        } 
+        
+    }
+}

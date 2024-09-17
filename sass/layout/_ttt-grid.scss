@@ -1,0 +1,26 @@
+@import "../variables";
+
+
+.tic-tac-toe-container{
+    box-sizing: border-box;
+    width: 250px;
+    height: 250px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 6px;
+    background-color:$rev-adapt-color;
+    margin: 0 1rem;
+    outline: 0;
+    border: 0;
+    .item{
+        cursor: pointer;
+        width: 100%;
+        height: auto;
+        background-color: $adapt-color;
+        padding: 8px;
+        border: 0;
+        outline: 0;
+    }
+}
+

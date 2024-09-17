@@ -1,0 +1,14 @@
+
+
+
+.score-container{
+    width: 100%;
+    ul{
+        @include flex-row(space-evenly, center);
+        li:not(:nth-child(2)){
+            @include flex-col(center, center);
+            gap: 10px;
+        }
+    }
+    
+}  
