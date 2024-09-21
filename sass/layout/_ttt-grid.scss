@@ -3,9 +3,9 @@
 
 .tic-tac-toe-container{
     box-sizing: border-box;
-    width: 100%;
+    width: calc(100% - 2rem);
     max-width: 400px;
-    height: 100%;
+    height: auto;
     max-height: 400px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -23,6 +23,16 @@
         padding: 8px;
         border: 0;
         outline: 0;
+        line-height: 0;
+    }
+    .x-icon-container{
+        display: none;
+    }
+    .o-icon-container{
+        display: block;
+        svg {
+            fill: aqua;
+        }
     }
 }
 

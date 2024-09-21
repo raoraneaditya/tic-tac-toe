@@ -2,17 +2,16 @@
 .list-container{
     width: 100%;
     height: auto;
-    padding: 0 1rem;
+    padding: 0;
     form{
+        width: 100%;
+        height: auto;
         @include flex-col(space-between, start);
         gap: 50px;
         div{
             width: 100%;
             @include flex-col(start, start);
             gap: 10px;
-            label{
-                font-size: 2rem;
-            }
             input{
                 box-sizing: border-box;
                 width: 100%;

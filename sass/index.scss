@@ -1,8 +1,12 @@
 @import "resets";
 @import "variables";
+@import "typography";
 @import "layout/main-container";
+@import "layout/page1";
 @import "layout/form";
+@import "layout/page2";
 @import "layout/player-score";
 @import "layout/ttt-grid";
+@import "layout/edit-game";
 @import "components/button";
 @import "responsive";

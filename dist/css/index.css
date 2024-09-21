@@ -39,6 +39,10 @@ input {
 }
 
 button {
+  cursor: pointer;
+  width: inherit;
+  height: inherit;
+  background-color: transparent;
   border: 0;
 }
 
@@ -56,6 +60,29 @@ ul {
   list-style-type: none;
 }
 
+.tic-tac-toe-title {
+  font-size: 1.2rem;
+}
+
+.list-container form div label {
+  font-size: 2rem;
+}
+
+.score-container ul li > p {
+  font-size: 32px;
+}
+.score-container ul li > label {
+  font-size: 22px;
+}
+
+.hide {
+  display: none !important;
+}
+
+.reveal {
+  display: block;
+}
+
 .default-container {
   box-sizing: border-box;
   width: 100%;
@@ -64,39 +91,53 @@ ul {
   justify-content: center;
   align-items: center;
 }
-.default-container .tic-tac-toe-title {
-  position: absolute;
-  top: 5%;
-  font-size: 1.2rem;
-}
 .default-container .main-container {
   width: 600px;
-  height: calc(100% - 2rem);
+  height: calc(100vh - 2rem);
   margin: 1rem;
   border: 5px solid light-dark(black, white);
   border-radius: 8px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
+}
+.default-container .main-container .tic-tac-toe-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: start;
+  margin: 10px 0 0 0;
 }
 .default-container .main-container .fixed-container {
   width: 100%;
   height: auto;
+  flex: 1 0 0;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  gap: 80px;
   box-sizing: border-box;
+}
+
+.page1 {
+  width: 100%;
+  height: auto;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .list-container {
   width: 100%;
   height: auto;
-  padding: 0 1rem;
+  padding: 0;
 }
 .list-container form {
+  width: 100%;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -111,9 +152,6 @@ ul {
   align-items: start;
   gap: 10px;
 }
-.list-container form div label {
-  font-size: 2rem;
-}
 .list-container form div input {
   box-sizing: border-box;
   width: 100%;
@@ -124,14 +162,25 @@ ul {
   border-radius: 8px;
 }
 
+.page2 {
+  width: 100%;
+  height: auto;
+  flex: 1 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
 .score-container {
   width: 100%;
 }
 .score-container ul {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
+  margin: 0 1rem;
 }
 .score-container ul li:not(:nth-child(2)) {
   display: flex;
@@ -143,9 +192,9 @@ ul {
 
 .tic-tac-toe-container {
   box-sizing: border-box;
-  width: 100%;
+  width: calc(100% - 2rem);
   max-width: 400px;
-  height: 100%;
+  height: auto;
   max-height: 400px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -164,6 +213,35 @@ ul {
   padding: 8px;
   border: 0;
   outline: 0;
+  line-height: 0;
+}
+.tic-tac-toe-container .x-icon-container {
+  display: none;
+}
+.tic-tac-toe-container .o-icon-container {
+  display: block;
+}
+.tic-tac-toe-container .o-icon-container svg {
+  fill: aqua;
+}
+
+.edit-container {
+  width: 100%;
+  height: 50px;
+  position: relative;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.edit-container .start-over-icon {
+  width: 50px;
+  height: 32px;
+}
+.edit-container .refresh-icon {
+  width: 50px;
+  height: 50px;
 }
 
 .start-btn {
@@ -189,6 +267,12 @@ ul {
   }
   .p-0 {
     padding: 0px !important;
+  }
+  .space-evn {
+    justify-content: space-evenly !important;
+  }
+  .m-0 {
+    margin: 0 !important;
   }
 }
 

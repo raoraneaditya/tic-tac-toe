@@ -40,6 +40,10 @@ input{
     outline: 0;
 }
 button{
+    cursor: pointer;
+    width: inherit;
+    height: inherit;
+    background-color: transparent;
     border: 0;
 }
 svg{

@@ -1,0 +1,8 @@
+
+
+.page2{
+    width: 100%;
+    height: auto;
+    flex: 1 0 0;
+    @include flex-col(space-evenly, center);
+}

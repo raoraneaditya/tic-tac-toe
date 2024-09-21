@@ -4,7 +4,8 @@
 .score-container{
     width: 100%;
     ul{
-        @include flex-row(space-evenly, center);
+        @include flex-row(space-between, center);
+        margin: 0 1rem;
         li:not(:nth-child(2)){
             @include flex-col(center, center);
             gap: 10px;

@@ -1,0 +1,26 @@
+.tic-tac-toe-title{
+    font-size: 1.2rem;
+}
+
+//list fonts which contains player 1 and player 2 label
+
+.list-container form div label{
+                font-size: 2rem;
+}
+
+
+
+// score container which has player 1 and 2 scores
+.score-container{
+   
+    ul{
+        
+        li >p{
+            font-size: 32px;
+        }
+        li > label{
+            font-size: 22px;
+        }
+    }
+    
+} 
