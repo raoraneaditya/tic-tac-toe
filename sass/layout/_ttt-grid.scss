@@ -11,6 +11,7 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     gap: 6px;
+    aspect-ratio: 1/1;
     background-color:$rev-adapt-color;
     margin: 0 1rem;
     outline: 0;
@@ -19,17 +20,28 @@
         cursor: pointer;
         width: 100%;
         height: auto;
+        min-height: 100%;
         background-color: $adapt-color;
         padding: 8px;
         border: 0;
         outline: 0;
         line-height: 0;
+        svg {
+            fill: $rev-adapt-color;
+        }
+        .cls-1{
+            stroke: $rev-adapt-color;
+        }
     }
+
     .x-icon-container{
-        display: none;
+        display: block;
+        
+        
     }
     .o-icon-container{
         display: block;
+       
         svg {
             fill: aqua;
         }

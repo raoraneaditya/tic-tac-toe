@@ -30,4 +30,11 @@ function back(){
     actualGame.classList.add("hide");
     player1.value = "";
     player2.value = "";
+    resetRound(); //function is called from tictactoe engine
+}
+
+function reload(){
+    resetRound();
+    xPlayerScore = 0;
+    oPlayerScore  =0;
 }

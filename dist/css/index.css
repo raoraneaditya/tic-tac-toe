@@ -1,10 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Special+Elite&display=swap");
 :root {
   color-scheme: light dark;
 }
 
 * {
-  font-family: "Orbitron", sans-serif;
+  font-family: "Special Elite", system-ui;
   color: inherit;
   margin: 0;
   padding: 0px;
@@ -12,7 +13,7 @@
 }
 
 body {
-  font-family: "Orbitron", sans-serif;
+  font-family: "Special Elite", system-ui;
   background-color: light-dark(white, black);
   color: light-dark(black, white);
   font-weight: 400;
@@ -48,7 +49,7 @@ button {
 
 svg {
   width: inherit;
-  filter: invert(1);
+  height: inherit;
 }
 
 a {
@@ -200,6 +201,7 @@ ul {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
   gap: 6px;
+  aspect-ratio: 1/1;
   background-color: light-dark(black, white);
   margin: 0 1rem;
   outline: 0;
@@ -209,14 +211,21 @@ ul {
   cursor: pointer;
   width: 100%;
   height: auto;
+  min-height: 100%;
   background-color: light-dark(white, black);
   padding: 8px;
   border: 0;
   outline: 0;
   line-height: 0;
 }
+.tic-tac-toe-container .item svg {
+  fill: light-dark(black, white);
+}
+.tic-tac-toe-container .item .cls-1 {
+  stroke: light-dark(black, white);
+}
 .tic-tac-toe-container .x-icon-container {
-  display: none;
+  display: block;
 }
 .tic-tac-toe-container .o-icon-container {
   display: block;
@@ -238,10 +247,12 @@ ul {
 .edit-container .start-over-icon {
   width: 50px;
   height: 32px;
+  fill: light-dark(black, white);
 }
 .edit-container .refresh-icon {
   width: 50px;
   height: 50px;
+  fill: light-dark(black, white);
 }
 
 .start-btn {
